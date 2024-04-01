@@ -65,3 +65,60 @@ print("-"*30)
 msg = "\n Hello World \t"
 print(msg.strip())
 
+    '''
+                Split
+    transforma a string em uma lista com um separador (padrao de caracteres)
+    por padrao, o separador é uma sequencia de espaços em branco
+
+'''
+str1 = "    JCRPROG Introduction \t\t to\n Programming"
+data = str1.split()
+print(data)
+
+str2 = "pineapple, banana, khaki, damascus"
+fruits = str2.split(", ")#remove a virgula e o espaço e armazena apenas o nome das frutas
+print(fruits)
+
+s1,s2 = input().split() #entrar com duas strings na mesma linha, guardará a 1° em s1 e a 2° em s2.
+print(s1)
+print(s2)
+
+a,b,c = [int(i) for i in input().split()] #entrar com os 3 numeros na mesma linha, guardará o 1° em a, 2° em b e 3° em c.
+print(a,b,c)
+
+'''
+                Join
+    junta uma lista de strings usando a string base como concatenador.
+'''
+fruits = ["pineapple", "banana", "khaki", "damascus"]#lista de strings
+print(fruits)
+txt = ", ".join(fruits) #printa uma unica string com os itens da lista, concatenados com o valor ", "
+print (txt)
+
+'''
+                Replace
+    cria uma nova string, substituindo os caracteres iguais nesta por outros
+    var.replace("x","y"), onde x = letra que será substituida // y = termo substituto
+'''
+x = "Introduction to Programming"
+y = x.replace("o","_")
+print(y)
+y = x.replace("Introduction","$"*len("Introduction"))
+print(y)
+
+#capitalize() - converte o primeiro caracter em maiusculo.
+#lower() - converte a string para minuscula.
+#upper() - converte a string para maiuscula.
+#isnumeric() - testa se todos os caracteres são digitos.
+#isalpha() - testa se todos os caracteres são letras.
+#isalnum() - testa se todos os caracteres são letras ou digitos.
+
+sc = input("Enter a string of characters: ")
+if sc.isalpha():
+    print(sc, "has only letters.")
+elif sc.isnumeric():
+    print(sc, "has only digits.")
+elif sc.isalnum():
+    print(sc, "has letters and digits.")
+else:
+    print(sc, "It doesn't just have letters and digits.")
