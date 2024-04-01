@@ -1,0 +1,47 @@
+# Básico de strings
+# Definição de string
+
+# O que é?
+    # Uma string é uma sequência de caracteres
+    # Em python, é representada como lista imutável de caracteres.
+    # é representada como uma sequencia de caracteres entre aspas simples ou duplas '' ""
+# Exemplo
+msg = "Hello world"
+print(msg)
+
+# Caracteres especiais
+
+# Trecho com erros
+    #" e \ são caracteres reservados
+# print("Voce respondeu "Sim".")
+# print("\")
+      
+# Trecho corrigido
+print("Você respondeu \"SIM\".")
+print("\\")
+
+print("Joe\'s Car")
+print("Quebra de\nLinha")
+print("\tTabulação")
+
+
+# Acesso a elementos da string
+msg = "Hello world"
+print(msg[0])
+print(msg[1])
+print(msg[-1])
+print(msg[-5])
+# print(msg[12]) # fora de range
+
+# msg[0]= "y" # strings são listas imutáveis
+
+# Como acessar trechos
+# string[start:stop:step]
+    # O Trecho inicia na posicão start(inclusive) e vai até a posição stop (exclusive), selecionando de step em step caracteres
+    # Caso o parâmetro step não seja especificado, Python utilizará o valor 1 como padrão (assim como em listas ou tuplas)
+
+print(msg[3:8])
+print(msg[:5])
+print(msg[6:])
+print(msg[::2])
+print(msg[::-1])
