@@ -1,0 +1,67 @@
+# Formatando strings
+
+    # Uso da função format
+    # A função recebe como parametros um valor e uma string com a formatação desejada
+    # Como resposta a função retorna uma string formatada
+    # A string de formataçao possui uma especificação para cada tipo de dados
+# https://docs.python.org/3/library/string.html#formatspec
+
+# Formatando inteiros
+
+print(format(10,"d"))
+
+# Inteiros com sinais
+
+print(format(13,"+d"))
+print(format(-7, "+d"))
+
+# Formatando reais
+print("-" * 30)
+
+# Reais
+print(format(3.14159265359, "f"))
+
+# Reais com sinais
+print(format(3.14159265359, "+f"))
+
+# Reais com sinais e precisão
+print(format(3.14159265359, "+.10f"))
+
+
+print("-"*30)
+
+# Outra forma de formatar
+
+# Usar o format como método de str
+# https://docs.python.org/3/library/string.html#formatstrings
+
+fruits = "Fruits: {0}, {1} e {2}"
+print(fruits.format("Pineapple","Banana","Khaki"))
+
+pets = "Whos is smarter: {1} ou {0}"
+print(pets.format("Cat","Dog"))
+
+print("-"*30)
+
+# Formatação com inteiros
+sum = "{0} + {1} = {2}"
+print(sum.format(3, 4, 3 + 4))
+values = "Min/Avg/Max value: {0}/{1}/{2}"
+print(values.format(10,35,100))
+
+print("-"*30)
+
+# Formatação com reais
+pi = "O valor de pi é: {0:.4f}"
+print(pi.format(3.14159265359))
+grades = "The average grade for the class was {0:.2f}"
+print(grades.format(8.7525))
+
+print("-"*30)
+
+# Formatação com dados diferentes
+
+header = "{0},{2}{1},{3}"
+print(header.format("Jacareí",1,"April ",2024))
+temperature = "{1:02d}/{0:02d}/{2}:{3:.1f}°C"
+print(temperature.format(1, 4, 2024, 28.765))
