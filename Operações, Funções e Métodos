@@ -1,0 +1,133 @@
+# Operações, Funções e Métodos 
+
+    # Concatenação e replicação
+msg = "hello"
+msg2 = "y" + msg[1:] + "w"
+print(msg2)
+
+s = "abc"
+print(s*3)
+
+print("-"*30)
+# Tamanho de uma string
+
+msg = "hello"
+print(len(msg))
+msg2 = "Hello World"
+print(len(msg2))
+msg3 = "Hello\nWorld"
+print(len(msg3))
+
+
+print("-"*30)
+
+# Comparação de strings
+
+a = "Python"
+b = "Py" + "thon"
+c = "p" + "ython"
+print(a == b)
+print(a == c)
+print(b != c)
+
+print("-"*30)
+
+print("thon" in "Python")
+print("thor" in "Python")
+msg = "Hello World"
+print(msg.startswith("Hello"))
+print(msg.startswith("World"))
+
+print("-"*30)
+
+# Buscando uma string
+
+    # index retorna a primeira posição
+bond = "My name is Bond, James Bond"
+print(bond.index("Bond"))
+msg = "Hello World"
+print(msg.index("World"))
+# print(msg.index("Bond")) # erro ValueError: substring not found
+print("-"*30)
+
+# find retorna a primeira posição
+
+print(bond.find("Bond"))
+print(msg.find("World"))
+print(msg.find("bond")) # -1
+
+print("-"*30)
+
+# Manipulando string
+
+# Uso da função strip
+ #- O método remove todos os espaços em branco(incluindo quebrar de linhas e tabulações) no início e no fim da string.
+msg = "\n Hello World \t"
+print(msg.strip())
+
+# Operações, Funções e Métodos 
+
+    # Concatenação e replicação
+msg = "hello"
+msg2 = "y" + msg[1:] + "w"
+print(msg2)
+
+s = "abc"
+print(s*3)
+
+print("-"*30)
+# Tamanho de uma string
+
+msg = "hello"
+print(len(msg))
+msg2 = "Hello World"
+print(len(msg2))
+msg3 = "Hello\nWorld"
+print(len(msg3))
+
+
+print("-"*30)
+
+# Comparação de strings
+
+a = "Python"
+b = "Py" + "thon"
+c = "p" + "ython"
+print(a == b)
+print(a == c)
+print(b != c)
+
+print("-"*30)
+
+print("thon" in "Python")
+print("thor" in "Python")
+msg = "Hello World"
+print(msg.startswith("Hello"))
+print(msg.startswith("World"))
+
+print("-"*30)
+
+# Buscando uma string
+
+    # index retorna a primeira posição
+bond = "My name is Bond, James Bond"
+print(bond.index("Bond"))
+msg = "Hello World"
+print(msg.index("World"))
+# print(msg.index("Bond")) # erro ValueError: substring not found
+print("-"*30)
+
+# find retorna a primeira posição
+
+print(bond.find("Bond"))
+print(msg.find("World"))
+print(msg.find("bond")) # -1
+
+print("-"*30)
+
+# Manipulando string
+
+# Uso da função strip
+ #- O método remove todos os espaços em branco(incluindo quebrar de linhas e tabulações) no início e no fim da string.
+msg = "\n Hello World \t"
+print(msg.strip())
